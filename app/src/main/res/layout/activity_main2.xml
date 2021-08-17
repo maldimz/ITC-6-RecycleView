@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView
+            android:id="@+id/iv_gambar"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/pacul"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_nama_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pacul"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="#34495E"
+        android:gravity="center_horizontal"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:cardElevation="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_spek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spek : 8 Damage Per Second"
+                android:textColor="@color/black"
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp">
+
+                <TextView
+                    android:id="@+id/tv_deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="deskripsi"
+                    android:textColor="@color/black"
+                    />
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="Nyawa Musuh"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/et_nyawa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="10sp"
+        android:hint="masukkan angka"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="test pacul"
+        />
+
+</LinearLayout>
